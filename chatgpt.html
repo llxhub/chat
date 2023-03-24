@@ -1,0 +1,278 @@
+<html lang="zh-cn">
+
+
+<head>
+    <meta name="360-analysis-id" content="2x1c2x2p2w392s-xiarou">
+    <meta charset="utf-8" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta charset="utf-8">
+    <title>
+        APIGPT - FreeChatGPT
+    </title>
+    <!-- CSS 样式 -->
+    <link rel="stylesheet" href="https://cdn.wpon.cn/2023/chatgpt/apigpt/css/style.css">
+    <link rel="stylesheet" href="https://cdn.wpon.cn/2023/chatgpt/apigpt/css/normalize.min.css">
+    <!--弹窗-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.wpon.cn/2023/newtc/css/message.css" />
+    <script src="https://cdn.wpon.cn/2023/newtc/js/jquery.min.js"></script>
+    <script src="https://cdn.wpon.cn/2023/newtc/js/message.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body data-theme="orange">
+    <div class="app">
+        <div class="wrapper">
+            <div class="chat-area">
+                <div class="chat-area-main" >
+                    <div class="chat-msg">
+                        <div class="chat-msg-profile">
+                            <img class="chat-msg-img" src="https://img.api.aa1.cn/2023/02/12/127eadca4ab03.svg" alt="">
+                            <div class="chat-msg-date">
+                                本消息由 API·GPT 官方公告编辑
+                            </div>
+                        </div>
+                        <div class="chat-msg-content">
+                            <br>
+                            <div class="chat-msg-text">
+                                这里是免费ChatGPT聊天室
+                            </div>
+                           
+                        
+                        </div>
+                    </div>
+
+                    <div class="chat-msg">
+                        <div class="chat-msg-profile">
+                            <img class="chat-msg-img" src="https://img.api.aa1.cn/2023/02/12/59c6fee6f7e66.png" alt="">
+                            <div class="chat-msg-date">本消息由OpenAI·ChatGPT提供</div>
+                        </div>
+                        <div class="chat-msg-content">
+                            <div class="chat-msg-text">
+
+                                [<span style="color:red">欢迎语</span>] 你好，朋友
+                                <br>我是<span style="color:blue">OpenAI</span>旗下强大的<span style="color:blue">ChatGPT·AI</span >，由<span style="color:green">API·GPT</span>技术开发支持，欢迎随时向我发起挑战！
+                                <br>如有 <span style="color:red">Bug/回复空白/响应超时</span> 等问题，请立即反馈（公众号:Java小笔记）
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-area-main" id="chat-body">
+                    <div class="chat-msg">
+                        <div class="chat-msg-profile">
+                            <img class="chat-msg-img" src="https://img.api.aa1.cn/2023/02/12/127eadca4ab03.svg" alt="">
+                            <div class="chat-msg-date">
+                                本消息由 API·GPT 官方公告编辑
+                            </div>
+                        </div>
+                        <div class="chat-msg-content">
+                            <br>
+                            <div class="chat-msg-text">
+                               
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="chat-msg">
+                        <div class="chat-msg-profile">
+                         
+                            <div class="chat-msg-date">本消息由OpenAI·ChatGPT提供</div>
+                        </div>
+                        <div class="chat-msg-content">
+                            <div class="chat-msg-text">
+
+                                [<span style="color:red">欢迎语</span>] 你好，伙计
+                                <br>我是<span style="color:blue">OpenAI</span>旗下强大的<span style="color:blue">ChatGPT·AI</span >，由<span style="color:green">API·GPT</span>技术开发支持，欢迎随时向我发起挑战！
+                                <br>如有 <span style="color:red">Bug/回复空白/响应超时</span> 等问题，请立即反馈（公众号:Java小笔记）
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span id="chatgpt-reflection"></span>
+                <div class="chat-area-footer">
+                    <input type="text" id="message" class="chat_message_up" placeholder="想与ChatGPT聊些什么..尝试回车！">
+                    <button class="detail-button" id="send-button">
+                            <span class="d-none d-md-inline-block me-2">
+                                Send
+                            </span>
+                            <i class="zmdi zmdi-mail-send">
+                            </i>
+                        </button>
+                </div>
+            </div>
+            <div class="detail-area">
+                <div class="detail-area-header">
+                    <div class="msg-profile group">
+                        <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
+                                <path d="M12 2l10 6.5v7L12 22 2 15.5v-7L12 2zM12 22v-6.5">
+                                </path>
+                                <path d="M22 8.5l-10 7-10-7">
+                                </path>
+                                <path d="M2 15.5l10-7 10 7M12 2v6.5">
+                                </path>
+                            </svg>
+                    </div>
+                    <div class="detail-title">
+                    </div>
+                    <div class="detail-subtitle">
+                         OpenAI旗下ChatGPT产品
+                    </div>
+             
+                </div>
+                <div class="detail-changes">
+                    <div class="detail-change">
+                        
+                    </div>
+                    <div class="detail-change">
+                        欢迎关注公众号！
+                    </div>
+                </div>
+                <img id="qrImg" alt="公众号二维码" src="https://cdn.staticaly.com/gh/1902756969/picgo_imgs@master/qrcode_for_gh_db38e932a588_344.5oqxlq21fy00.webp">
+            </div>
+        </div>
+    </div>
+    <!-- GPT回复消息提示音 -->
+    <audio src="https://img.api.aa1.cn/2023/02/14/0c88eedf32d22.MP3" id="gpt_ok"></audio>
+    <!-- 发送消息提示音 -->
+    <audio src="https://img.api.aa1.cn/2023/02/14/363dd6594350b.mp3" id="you_success"></audio>
+    <!-- JS Start -->
+    <script>
+        function success() {
+            var audioEle = document.getElementById("you_success"); // 发送消息提示音 
+            audioEle.play();
+            $.message({
+                type: 'success',
+                content: "发送成功"
+            });
+        }
+        
+        function gpt_ok() {
+            var audioEle = document.getElementById("gpt_ok"); // GPT回复消息提示音
+            audioEle.play();
+            $.message({
+                type: 'warning',
+                content: "来消息啦～"
+            });
+        }
+        document.onkeydown = function(e) {
+            if (!e) e = window.event; //火狐中是 window.event
+            if ((e.keyCode || e.which) == 13) {
+                document.getElementById("send-button").click();
+            }
+        }
+        $(document).ready(function() {
+            // 滚动聊天记录区域到底部
+            $('.chat-area').animate({
+                scrollTop: $('.chat-area')[0].scrollHeight
+            },10);
+            var chatBody = $('#chat-body');
+            var messageInput = $('#message');
+            var sendButton = $('#send-button');
+
+            // 发送消息
+            sendButton.click(function() {
+                var message = messageInput.val();
+                if (message.trim() !== '') {
+                    // 在聊天记录区域中添加用户输入的消息
+                    appendMessage('You', message);
+                    appendloading('ChatGPT');
+                    $('.chat-area').animate({
+                            scrollTop: $('.chat-area')[0].scrollHeight
+                        },
+                        1000);
+
+                    // 调用ChatGPT接口获取回复消息
+                    $.ajax({
+                        //  接口来自夏柔API 勿修改，会出错
+                        //  功能特点：大量聊天对话存储数据库 接口秒级响应回复
+                        // 若不想出现机器人的 “问题” “答” 请将下面的地址更换为：https://v1.apigpt.cn/nchatgpt/
+                        url: 'https://v1.apigpt.cn/chatgpt/',
+                        type: 'POST',
+                        data: {
+                            message: message
+                        },
+                        success: function(response) {
+                            // 在聊天记录区域中添加ChatGPT的回复消息
+                            deleteMessage('ChatGPT')
+                            appendMessage('ChatGPT', response);
+                            $('.chat-area').animate({
+                                    scrollTop: $('.chat-area')[0].scrollHeight
+                                },
+                                1000);
+
+                        }
+                    });
+
+                    // 清空输入框
+                    messageInput.val('');
+                }
+            });
+            // 在聊天记录区域中添加一条消息
+            function appendloading(from) {
+                var messageElement = $('<div class="chat-msg" id="loads"></div>');
+                var messagePend = $('<div class="chat-msg-profile"></div>')
+                    // var avatarElement = $('');
+                var messageContentElement = $('<div class="chat-msg-text" style="margin-left: 12px;">AI思考中...</div>');
+
+                if (from === 'You') {
+                    messageElement.addClass('owner');
+                    var avatarElement = $('<img class="chat-msg-img" src="https://img.api.aa1.cn/2023/02/12/043fbdaf8c1b8.svg" alt=""><div class="chat-msg-date">我</div>');
+                    // var avatarElement = $('<div class="chat-msg-date">2023-02-12 00:00:01</div>');
+                } else { // robot
+                    var avatarElement = $('<img class="chat-msg-img" src="https://img.api.aa1.cn/2023/02/12/59c6fee6f7e66.png" alt="">');
+                    var tipsElement = $('<div class="chat-msg-date">本消息由OpenAI·ChatGPT提供</div>');
+                    var chatgpt_reflection = document.getElementById("chatgpt-reflection").innerText = '';
+                }
+
+                messagePend.append(avatarElement);
+                messagePend.append(tipsElement);
+                messageElement.append(messagePend);
+                messageElement.append(messageContentElement);
+
+
+
+                chatBody.append(messageElement);
+                // 滚动聊天记录区域到底部
+                chatBody.scrollTop(chatBody[0].scrollHeight);
+            }
+
+            function deleteMessage(from) {
+                $("#loads").remove();
+            }
+            // 在聊天记录区域中添加一条消息
+            function appendMessage(from, message) {
+                
+                var messageElement = $('<div class="chat-msg" id="chatai"></div>');
+                var messagePend = $('<div class="chat-msg-profile"></div>')
+                    // var avatarElement = $('');
+                var messageContentElement = $('<div class="chat-msg-text" style="margin-left: 12px;"></div>');
+
+                if (from === 'You') {
+                    success();
+                    messageElement.addClass('owner');
+                    var avatarElement = $('<img class="chat-msg-img" src="https://img.api.aa1.cn/2023/02/12/043fbdaf8c1b8.svg" alt=""><div class="chat-msg-date">我</div>');
+                } else { // robot
+                    gpt_ok(); // 消息提示音
+                    var avatarElement = $('<img class="chat-msg-img" src="https://img.api.aa1.cn/2023/02/12/59c6fee6f7e66.png" alt="">');
+                    var tipsElement = $('<div class="chat-msg-date">本消息由OpenAI·ChatGPT提供</div>');
+                }
+                // avatarElement.text(from[0]);
+                messageContentElement.html(message);
+
+                messagePend.append(avatarElement);
+                messagePend.append(tipsElement);
+                messageElement.append(messagePend);
+                messageElement.append(messageContentElement);
+
+                chatBody.append(messageElement);
+                localStorage.setItem('message',JSON.stringify(chatBody.html()))
+                // 滚动聊天记录区域到底部
+                chatBody.scrollTop(chatBody[0].scrollHeight);
+                
+            }
+            chatBody.html(JSON.parse(localStorage.getItem('message')))
+        });
+        
+    </script>
+    <!-- JS End -->
+</body>
+
+</html>
